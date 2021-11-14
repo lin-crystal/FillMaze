@@ -16,14 +16,23 @@ link_libraries(${OPENGL} ${GLEW_LINK} ${GLFW_LINK})
 
 add_executable(main
         src/main.cpp
+        include/main.h
         src/control.cpp
+        include/control.h
         src/draw.cpp
+        include/draw.h
         src/gameresult.cpp
+        include/gameresult.h
         src/gameover.cpp
+        include/gameover.h
         src/gamestart.cpp
+        include/gamestart.h
         src/init.cpp
+        include/init.h
         src/ball.cpp
+        include/ball.h
         src/laberynth.cpp
+        include/laberynth.h
         )
 
 if (APPLE)
